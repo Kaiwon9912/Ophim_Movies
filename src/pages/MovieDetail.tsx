@@ -11,7 +11,7 @@ import ImageCarousel from "@/features/movies/components/ImageCarousel";
 export default function MovieDetail() {
   const { slug } = useParams<{ slug: string }>();
   const { data, isLoading } = useMovieDetail(slug!);
-  const {data: imageData,isLoading: isImageLoading} = useMovieImage(slug!);
+  const {data: imageData} = useMovieImage(slug!);
   
 
   if (isLoading) return <Spinner />;
