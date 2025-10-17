@@ -22,7 +22,7 @@ export default function Home() {
   const features = getTopRatedMovies(homeResponse?.data.items || [], 5);
 
   return (
-    <div className="pt-16">
+    <div className="">
       <MainCarousel
         movies={features}
         options={{ loop: true }}

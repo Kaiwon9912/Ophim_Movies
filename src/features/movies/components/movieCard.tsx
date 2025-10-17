@@ -7,7 +7,7 @@ export const MovieCard: React.FC<{ movie: Movie }> = ({ movie }) => (
   <Link to={`/phim/${movie.slug}`} className="rounded-xl overflow-hidden  shadow hover:scale-105 transition">
     <div className="relative w-full aspect-[2/3] ">
      <div className="absolute w-12 font-bold bg-black rounded-2xl right-1 top-1 text-yellow-300"> {movie.imdb.vote_average}</div>
-    <img src={ophimIMG + movie.thumb_url} alt={movie.name} className="w-full h-full object-cover" />
+    <img src={ophimIMG + movie.thumb_url} alt={movie.name} loading="lazy"  className="w-full h-full object-cover" />
     </div>
   
     <div className="p-2 w-fit ">
