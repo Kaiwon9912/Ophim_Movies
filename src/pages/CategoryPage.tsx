@@ -1,4 +1,4 @@
-import { useState } from "react";
+
 import { useParams } from "react-router-dom";
 import { useMovieCategory } from "@/features/movies/hook";
 import { Spinner } from "@/components/Spinner";

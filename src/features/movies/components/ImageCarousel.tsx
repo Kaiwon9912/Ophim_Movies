@@ -8,7 +8,7 @@ import { NextButton, PrevButton, usePrevNextButtons } from "@/components/ui/Caro
 import "@/css/embla.css"
 import type { ImageItem } from "@/types/image.type"
 import { imageURL } from "@/constants"
-import { ChevronLeft } from "lucide-react"
+
 
 type PropType = {
   images?: ImageItem[]
