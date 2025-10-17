@@ -15,7 +15,7 @@ type PropType = {
   options?: EmblaOptionsType
 }
 
-const ImageCarousel: React.FC<PropType> = ({ images, options }) => {
+const ImageCarousel: React.FC<PropType> = ({ images }) => {
   // Initialize Embla
   const [emblaRef, emblaApi] =useEmblaCarousel({
   containScroll: 'trimSnaps',
